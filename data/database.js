@@ -17,7 +17,7 @@ const initDb = (callback) => {
   });
 };
 
-const getdatabase = () => {
+const getDatabase = () => {
   if (!database) {
     throw new Error("Database not initialized");
   }
@@ -26,5 +26,5 @@ const getdatabase = () => {
 
 module.exports = {
   initDb,
-  getdatabase,
+  getDatabase,
 };
