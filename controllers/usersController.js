@@ -20,7 +20,6 @@ const getSingle = async (req, res) => {
   const userId = new ObjectId(req.params.id);
   const result = await mongodb
     .getDatabase()
-    .db("users")
     .collection("users")
     .find({ _id: userId });
   result.toArray().then((users) => {
