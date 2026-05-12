@@ -5,10 +5,10 @@
     "description": "API for managing users",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "https://cse-341-project1-8kii.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
@@ -20,6 +20,16 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
           }
         }
       }
@@ -51,10 +61,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "email": {
                   "example": "any"
                 },
-                "lastName": {
+                "username": {
                   "example": "any"
                 },
                 "favoriteColor": {
@@ -115,10 +125,10 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "email": {
                   "example": "any"
                 },
-                "lastName": {
+                "username": {
                   "example": "any"
                 },
                 "favoriteColor": {
