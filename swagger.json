@@ -5,7 +5,7 @@
     "description": "API for managing users",
     "version": "1.0.0"
   },
-  "host": "https://cse-341-project1-8kii.onrender.com",
+  "host": "cse-341-project1-8kii.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
