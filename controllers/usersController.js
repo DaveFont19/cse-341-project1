@@ -33,8 +33,9 @@ const createUser = async (req, res) => {
   // #swagger.tags = ['Users']
   try {
     const user = {
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
       email: req.body.email,
-      username: req.body.username,
       favoriteColor: req.body.favoriteColor,
       birthday: req.body.birthday
     };
